@@ -1,0 +1,23 @@
+kubectl commands
+
+kubectl get nodes  (to get nodes in default namespace)
+
+vim pod.yaml
+:wq!
+
+kubectl create -f pod.yaml
+kubectl describe pod mypod
+
+kubectl delete pod mypod
+
+kubectl run mypod --image=nginx --restart=never
+
+kubectl run pod-2 --image=lpine -l name=pod-2 --restart=never
+
+kubectl get pod --show-labels
+
+kubectl run pod-3 --image=nginx --port 8080 --restart=never  (to expose the pod through port 8080) 
+(to know if the pod is exposed do kubectl describe pod pod-3 and you will se the port in details)
+
+kubectl delete pods mypod pod-2 pod-3  (multiple pods can be deleted using 1 command be mentioning their names)
+

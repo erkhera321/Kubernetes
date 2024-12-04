@@ -1,0 +1,18 @@
+kubernetes.io/docs/home     to search for any kubernetes code
+
+The labels mentioned in selector secyion should be same as labels mentioned in template section (the pod labels)
+
+vim replica-file.yaml
+cat replica-file.yaml  to see the contents of file
+kubectl create -f replica-file.yaml
+
+kubectl get rs 
+
+kubectl scale rs myreplicaset --replicas=5
+
+kubectl delete pod mypod     (pod will not be deleted since replica set will create again if any pod gets deleted)
+
+If we delete the whole replica set only then pods will be deleted
+
+kubectl delete rs myreplicaset
+

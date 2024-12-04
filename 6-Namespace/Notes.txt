@@ -1,0 +1,7 @@
+A namespace in Kubernetes is a logical partitioning of a cluster that allows you to divide the cluster resources and workloads into isolated segments. It is commonly used to organize and manage resources (like pods, services, deployments, etc.) for different teams, projects, or environments within the same cluster.
+
+Key Features of Kubernetes Namespaces:
+. Isolation: Resources in one namespace are isolated from those in another. For instance, you can have the same resource names (like pod/my-app) in two different namespaces without conflict.
+. Access Control: Using Kubernetes Role-Based Access Control (RBAC), you can restrict who can access specific namespaces.
+. Resource Quotas: Namespaces support setting quotas for CPU, memory, and storage usage, ensuring fair resource distribution.
+. Organization: Helps to organize resources based on project, environment (e.g., dev, staging, production), or team.

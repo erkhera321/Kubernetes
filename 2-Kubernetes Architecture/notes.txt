@@ -1,0 +1,13 @@
+We cannot access cluster if master node not working
+
+- Docker: Container run time engine
+
+- Kube-API server: Entry point. user requests to access cluster, 
+the requests goes to API server which authenticates and see which functions access does the user have.
+
+- Kube- scheduler: it sees that the pod requirement can be achieved by which node and 
+which node is healthy to deploy the pod on a particulat node
+
+- Controller manager: Brain of kubernetes cluster. Maintains status of all the different things in cluster.
+
+- ETCD databse: only kube-api server can directly connect to ETCD databse.

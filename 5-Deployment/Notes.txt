@@ -1,0 +1,31 @@
+Problems with Replica set
+- If upgarding to new version it will delete all pods and the create all new. so downtime
+- if we want to rollback for any reason then we cannot do with replicaset
+
+kubectl create deployment mydeploy --image=nginx
+
+kubectl get all
+
+kubectl get deploy
+
+kubectl get deploy -o wide
+
+Kubectl rollout history deploy mydeploy
+it will show the versions of the deployment
+
+kubectl scale deploy mydeploy --replicas=3
+to scale up the number of pods
+
+Kubectl get deploy my deploy -o yaml > mydeploy.yaml
+to get the deployment code in a yaml file
+
+vim mydeploy.yaml
+
+kubectl apply -f mydeploy.yaml
+
+kubectl rollout history deploy mydeploy
+
+kubectl rollout undo deploy mydeploy
+
+
+

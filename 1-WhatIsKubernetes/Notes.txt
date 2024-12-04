@@ -1,0 +1,4 @@
+- The application code is packaged into docker file 
+- Docker image is build using docker build command to create image from docker file
+- Docker image can be used to create Docker Container
+- Container are light weighted, isolated, easily sharable 
