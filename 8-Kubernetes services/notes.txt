@@ -1,0 +1,11 @@
+Problem
+- IP adress changes when a pod is deleted and recreated either on same node or on different node
+
+solution- service: provides static IP
+
+service gives a static IP which is used  by user to connect to it and then it connects to the application pods at backend
+
+service distributes the traffic equally to pods and use lables and selectors
+
+pods- lables
+service-selector

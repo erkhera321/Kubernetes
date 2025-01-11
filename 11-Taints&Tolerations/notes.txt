@@ -1,0 +1,2 @@
+if taint is applied on a node and same tolerations for it on a pod 
+then the pod have the option to schedule on the tainted node or any other untainted node as well

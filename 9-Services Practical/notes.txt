@@ -1,0 +1,4 @@
+- the node port number in the service can be used to access the application from browser
+
+- if no service type given then it creates clusterIP by default
+

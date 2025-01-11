@@ -1,0 +1,11 @@
+In any namespace if any user can create any resource with limitless cpu or memory or storage 
+then it will icrease resource consumption a lot
+
+- can limit number of pods in a namespace
+- can limit cpu , memory
+
+- if the cpu or memory consumption is more then even less pods can be made than the limit
+e.g. if 4 pods are allowed but 3 pods consumed all the allocated memory and cpu then it cannot make the 4th pod
+
+use file based approach to create resource quota
+

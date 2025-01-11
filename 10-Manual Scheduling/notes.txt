@@ -1,0 +1,5 @@
+For manual scheduling
+
+1. use lables on pods
+2. use nodename property in pod to schedule it on specific node
+
